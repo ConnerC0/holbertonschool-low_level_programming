@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - printf outputting different sized variables in bytes of a 32bit file and 64bit file.
+ * main - printf outputting different sized variables in 
+ *        bytes of a 32bit file and 64bit file.
  *
  * Return: Always 0 (Success)
  */
