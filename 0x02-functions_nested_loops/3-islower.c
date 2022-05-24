@@ -3,7 +3,9 @@
 /**
  * _islower - checks for lowercase
  *
- * Return: void
+ * @c: provided integer
+ *
+ * Return: 1 or 0
  */
 int _islower(int c)
 {
