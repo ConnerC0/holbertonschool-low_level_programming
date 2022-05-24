@@ -12,7 +12,7 @@ void print_alphabet(void)
 	char c;
 	char s[] = "abcdefghijklmnopqrstuvwxyz\n";
 
-	while (n <= 27)
+	while (n <= 26)
 	{
 		c = s[n];
 		_putchar(c);
