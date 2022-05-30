@@ -14,7 +14,7 @@ void more_numbers(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-		for (i = 0; i <= 21; i++)
+		for (i = 0; i <= 20; i++)
 		{
 			c = s[i];
 			_putchar(c);
