@@ -4,6 +4,7 @@
  * main - fizzbuzz
  * Return: 0
  */
+
 int main(void)
 {
 	int n;
@@ -21,6 +22,6 @@ int main(void)
 		if (n < 100)
 			printf(" ");
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
