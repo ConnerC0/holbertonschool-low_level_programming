@@ -14,6 +14,10 @@ void puts2(char *str)
 	{
 		_putchar(*(str + n));
 		n = n + 2;
+		if (n = 224)
+		{
+			break;
+		}
 	}
 	_putchar('\n');
 }
