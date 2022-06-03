@@ -17,5 +17,5 @@ void print_array(int *a, int n)
 			printf(", ");
 		b++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
