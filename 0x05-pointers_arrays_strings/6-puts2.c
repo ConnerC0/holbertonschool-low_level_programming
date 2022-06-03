@@ -10,14 +10,10 @@ void puts2(char *str)
 {
 	int n = 0;
 
-	while (*(str + n))
+	while (*(str + n); n <= 224)
 	{
 		_putchar(*(str + n));
 		n = n + 2;
-		if (n = 224)
-		{
-			break;
-		}
 	}
 	_putchar('\n');
 }
