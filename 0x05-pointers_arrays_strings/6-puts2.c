@@ -10,7 +10,7 @@ void puts2(char *str)
 {
 	int n = 0;
 
-	while (*(str + n) && n <= 448)
+	while (*(str + n) && n <= 444)
 	{
 		_putchar(*(str + n));
 		n = n + 2;
