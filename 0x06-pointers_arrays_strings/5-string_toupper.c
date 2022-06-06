@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * string_toupper - converts all lowercase to uppercase in string.
+ * string_toupper - stuff
  * @str: provided variable
- * return: str
+ * Return: str
  */
+
 char *string_toupper(char *str)
 {
 	int i;
