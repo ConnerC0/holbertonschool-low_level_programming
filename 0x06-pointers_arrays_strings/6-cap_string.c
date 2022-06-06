@@ -13,6 +13,7 @@ char *cap_string(char *str)
 {
 	int l = 0;
 	int i;
+
 	l = strlen(str);
 
 	for (i = 0; i < l; i++)
@@ -22,6 +23,28 @@ char *cap_string(char *str)
 		else if (str[i] == ' ')
 			str[i + 1] = toupper(str[i + 1]);
 		else if (str[i] == '.')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '!')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '?')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '"')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '(')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == ')')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '{')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '}')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '\t')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == '\n')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == ',')
+			str[i + 1] = toupper(str[i + 1]);
+		else if (str[i] == ';')
 			str[i + 1] = toupper(str[i + 1]);
 	}
 	return (str);
