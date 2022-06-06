@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * reverse_array - a function that reverses the contents of an array of integers.
+ * reverse_array - a function that reverses the contents of an array.
  * @a: provided int
  * @n: provided int
  * Return: a
