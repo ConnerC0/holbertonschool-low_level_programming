@@ -11,22 +11,21 @@
 
 char *leet(char *str)
 {
-	int i;
-	int l = 0;
+	int i = 5, x = 0, y = 0;
+	char a[5] = {'a', 'e', 'o', 't', 'l'};
+	char b[5] = {'4', '3', '0', '7', '1'};
 
-	l = strlen(str);
-	for (i = 0; i < l; i++)
+	while (str[x])
 	{
-		if (str[i] == 'A' || str[i] == 'a')
-			str[i] = '4';
-		else if (str[i] == 'E' || str[i] == 'e')
-			str[i] = '3';
-		else if (str[i] == 'O' || str[i] == 'o')
-			str[i] = '0';
-		else if (str[i] == 'T' || str[i] == 't')
-			str[i] = '7';
-		else if (str[i] == 'L' || str[i] == 'l')
-			str[i] = '1';
+		y = 0;
+
+		while (y < i)
+		{
+			if (str[x] == a[y] || str[x] + 32 == a[y])
+				str[x] = b[y];
+			y++;
+		}
+		x++;
 	}
 	return (str);
 }
