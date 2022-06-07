@@ -5,31 +5,22 @@
  * _strpbrk - a function that searches a string for any of a set of bytes.
  * @s: provided variable
  * @accept: provided variable
- * Return: s
+ * Return: s + n or 0
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, p, f = 0;
+	int n, m;
 
-	for (i = 0; s[i] != '\0'; i++)
-		p = i;
-	for (i = 0; accept[i] != '\0'; i++)
+	for (n = 0; s[n] != '\0'; n++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (m = 0; accept[m] != '\0'; m++)
 		{
-			if (accept[i] == s[j])
-			{
-				if (j <= p)
-				{
-					p = j;
-					f = 1;
-				}
-			}
+			if (s[n] == accept[m])
+				break;
 		}
+		if (accept[m])
+			return (s + n);
 	}
-	if (f == 1)
-		return (&s[p]);
-	else
-		return (NULL);
+	return (0);
 }
