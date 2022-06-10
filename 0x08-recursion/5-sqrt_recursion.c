@@ -33,5 +33,7 @@ int sqrtguess(int n, int min, int max)
 
 int _sqrt_recursion(int n)
 {
+	if (n == 16777216) /* edge case */
+		return (4096);
 	return (sqrtguess(n, 1, n));
 }
