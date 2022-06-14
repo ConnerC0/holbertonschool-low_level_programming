@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - multiplies 2 arguments
+ * @argc: argument acounter
+ * @argv: argument string
+ * Return: 0
+ */
 
 int main(int argc, char *argv[])
 {
