@@ -3,8 +3,8 @@
 #include <ctype.h>
 /**
  * main - adds arguments together
- * @argc - argument counter
- * @argv - arguments
+ * @argc: argument counter
+ * @argv: arguments
  * Return: 0 or 1
  */
 
