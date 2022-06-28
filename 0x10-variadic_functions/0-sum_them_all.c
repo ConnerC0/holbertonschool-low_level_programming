@@ -16,7 +16,8 @@
      int i = 0, sum = 0;
      for(i = 0; i < n; i++)
         sum += va_arg(ap, int);
-
+     if (n == 0)
+	     return (0);
      va_end(ap);
      return (sum);
  }
