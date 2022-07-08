@@ -8,9 +8,9 @@
 
 size_t print_list(const list_t *h)
 {
-	unsigned int i = 0;
+       size_t i = 0;
 
-	while (h)
+	while (h != NULL)
 	{
 		if (h->str == NULL)
 			pritnf("[0] (nil)\n");
