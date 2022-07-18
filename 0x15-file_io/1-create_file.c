@@ -10,7 +10,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	mode_t mode = 0600;
+	mode_t mode = S_IRUSR | S_IWUSR;
 
 	if (filename == NULL)
 		return (-1);
