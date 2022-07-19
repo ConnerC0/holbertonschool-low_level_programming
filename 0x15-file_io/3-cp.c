@@ -35,7 +35,7 @@ void copy_file(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-	dfd = open(dest, O_CREAT | O_WRONLY | O_TRUC, 0664);
+	dfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((bread = read(sfd, buffer, 1024)) > 0)
 	{
 		if (write(dfd, buffer, bread) != bread || dfd == -1)
