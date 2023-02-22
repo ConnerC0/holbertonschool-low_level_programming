@@ -7,8 +7,10 @@
  * @value: value to search for
  * Return: first index or -1
  */
+
 int linear_search(int *array, size_t size, int value)
 {
+
 	size_t i;
 
 	if (array == NULL)
