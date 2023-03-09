@@ -11,7 +11,7 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	if (!array)
 		return (-1);
-	return (most_advanced_binary);
+	return (most_advanced_binary(array, value, 0, size - 1));
 }
 /**
  * print_it - to print the array we are searching
